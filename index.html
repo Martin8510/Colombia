@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia y sus Departamentos</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(to right, #FFCD00, #003893, #CE1126);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Sección principal */
+        .intro {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .intro img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        /* Sección de departamentos */
+        .departamentos {
+            margin-bottom: 3rem;
+        }
+        
+        .departamentos h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #003893;
+        }
+        
+        .grid-departamentos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .departamento {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .departamento:hover {
+            transform: translateY(-5px);
+        }
+        
+        .departamento img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .departamento-info {
+            padding: 1.5rem;
+        }
+        
+        .departamento-info h3 {
+            color: #CE1126;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #003893;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .grid-departamentos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Colombia y sus Departamentos</h1>
+            <p>Un país diverso y lleno de riqueza cultural</p>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="intro">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg" alt="Bandera de Colombia">
+            <h2>Colombia: La Tierra de la Sabrosura</h2>
+            <p>Colombia, oficialmente República de Colombia, es un país soberano situado en la región noroccidental de América del Sur. Es el único país de América del Sur que tiene costas en el océano Pacífico y acceso al Atlántico a través del mar Caribe.</p>
+            <p>El país está dividido en 32 departamentos y un distrito capital (Bogotá). Cada departamento tiene su propia identidad cultural, geográfica y económica.</p>
+        </section>
+        
+        <section class="departamentos">
+            <h2>Algunos Departamentos de Colombia</h2>
+            
+            <div class="grid-departamentos">
+                <article class="departamento">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Cartagena_de_Indias_-_Vista_aerea.jpg/800px-Cartagena_de_Indias_-_Vista_aerea.jpg" alt="Bolívar">
+                    <div class="departamento-info">
+                        <h3>Bolívar</h3>
+                        <p>Capital: Cartagena de Indias</p>
+                        <p>Conocido por su hermosa costa caribeña y su rica historia colonial. Cartagena es Patrimonio de la Humanidad.</p>
+                    </div>
+                </article>
+                
+                <article class="departamento">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cafetero.jpg/800px-Cafetero.jpg" alt="Antioquia">
+                    <div class="departamento-info">
+                        <h3>Antioquia</h3>
+                        <p>Capital: Medellín</p>
+                        <p>Famosa por su industria cafetera, paisajes montañosos y la amabilidad de su gente (paisas).</p>
+                    </div>
+                </article>
+                
+                <article class="departamento">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Catedral_de_Sal_de_Zipaquir%C3%A1.jpg/800px-Catedral_de_Sal_de_Zipaquir%C3%A1.jpg" alt="Cundinamarca">
+                    <div class="departamento-info">
+                        <h3>Cundinamarca</h3>
+                        <p>Capital: Bogotá (Distrito Capital)</p>
+                        <p>Alberga la capital del país y destaca por su importancia política, económica y cultural.</p>
+                    </div>
+                </article>
+                
+                <article class="departamento">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Valle_del_Cocora%2C_Salento%2C_Quind%C3%ADo%2C_Colombia.jpg/800px-Valle_del_Cocora%2C_Salento%2C_Quind%C3%ADo%2C_Colombia.jpg" alt="Quindío">
+                    <div class="departamento-info">
+                        <h3>Quindío</h3>
+                        <p>Capital: Armenia</p>
+                        <p>Corazón del Eje Cafetero, conocido por sus paisajes de cafetales y el Valle del Cocora.</p>
+                    </div>
+                </article>
+                
+                <article class="departamento">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Amazonas_river_-_Peru.jpg/800px-Amazonas_river_-_Peru.jpg" alt="Amazonas">
+                    <div class="departamento-info">
+                        <h3>Amazonas</h3>
+                        <p>Capital: Leticia</p>
+                        <p>Departamento con mayor extensión territorial, cubierto principalmente por selva amazónica.</p>
+                    </div>
+                </article>
+                
+                <article class="departamento">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Andres_Providencia_y_Santa_Catalina_Islas.png/800px-San_Andres_Providencia_y_Santa_Catalina_Islas.png" alt="San Andrés">
+                    <div class="departamento-info">
+                        <h3>San Andrés y Providencia</h3>
+                        <p>Capital: San Andrés</p>
+                        <p>Archipiélago en el Caribe conocido por sus playas de arena blanca y mar de siete colores.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Colombia y sus Departamentos - Todos los derechos reservados</p>
+            <p>Un país megadiverso lleno de cultura, naturaleza y gente cálida</p>
+        </div>
+    </footer>
+</body>
+</html>
