@@ -41,7 +41,7 @@ git commit -m "Primer commit"
 git remote add origin https://github.com/tuusuario/mi-pagina-web.git
 git push -u origin master
 
-#Este proyecto se encuentra bajo la licencia MIT.
+## 📋 Este proyecto se encuentra bajo la licencia MIT.
 
 
 
